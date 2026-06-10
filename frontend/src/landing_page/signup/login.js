@@ -7,7 +7,7 @@ function Login() {
   const [error, setError] = useState('');
 
   function handleLogin() {
-    axios.post('http://localhost:3002/login', { email, password })
+    axios.post('https://zerodha-clone-d88h.onrender.com/login', { email, password })
       .then((res) => {
         localStorage.setItem('token', res.data.token);
         window.location.href = 'http://localhost:3001';

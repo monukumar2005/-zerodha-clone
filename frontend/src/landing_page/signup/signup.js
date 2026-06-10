@@ -8,7 +8,7 @@ function Signup() {
   const [error, setError] = useState('');
 
   function handleSignup() {
-    axios.post('http://localhost:3002/register', { name, email, password })
+    axios.post('https://zerodha-clone-d88h.onrender.com/register', { name, email, password })
       .then((res) => {
         alert(res.data.message);
         window.location.href = 'http://localhost:3000/login';
