@@ -10,7 +10,7 @@ function Login() {
     axios.post('https://zerodha-clone-d88h.onrender.com/login', { email, password })
       .then((res) => {
         localStorage.setItem('token', res.data.token);
-        window.location.href = 'http://localhost:3001';
+        window.location.href = 'https://zerodha-clone-6h53-2qprk2rlm-monukumar2005s-projects.vercel.app';
       })
       .catch((err) => {
         setError(err.response?.data?.message || 'Something went wrong!');
